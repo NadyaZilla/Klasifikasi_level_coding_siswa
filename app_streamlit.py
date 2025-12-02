@@ -3,7 +3,8 @@ import pandas as pd
 import joblib
 
 st.set_page_config(
-	page_title = "Classification Level Coding"
+	page_title = "Classification Level Coding",
+	page_icon = "computer"
 )
 
 model = joblib.load("model_klasifikasi_level_coding_siswa.joblib")
@@ -26,4 +27,5 @@ if st.button("Predict", type="primary"):
 	st.balloons()
 
 st.divider()
+
 st.caption("Dibuat oleh Nadya Nurjzillani")
